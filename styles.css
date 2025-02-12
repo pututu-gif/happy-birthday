@@ -54,7 +54,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('collage.jpg') no-repeat center center/cover;
+    background: url('collage.jpeg') no-repeat center center/cover;
 }
 
 .love-letter {
