@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Puzzle 💘</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Happy Birthday abcde!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Puzzle Section -->
-        <div id="puzzle-section">
-            <h2>Before we begin, solve this riddle:</h2>
-            <p>I am the month of love and hearts. What month am I?</p>
-            <input type="text" id="puzzle-answer" placeholder="Type your answer here">
-            <button id="submit-answer">Submit</button>
-            <p id="error-message" class="hidden">Oops! Try again. 💔</p>
-        </div>
-
-        <!-- Valentine Proposal (Hidden initially) -->
-        <div id="valentine-section" class="hidden">
-            <h1>Will you be my Valentine? 💖</h1>
-            <button id="yesButton">Yes 💕</button>
-            <button id="noButton" disabled class="unclickable">No 💔</button>
-        </div>
+  <!-- FULL‑SCREEN SPLASH -->
+  <section id="splash">
+    <h1>Happy Birthday abcde!</h1>
+    <div class="buttons">
+      <button id="btn-love">Click Me ❤️</button>
+      <button id="btn-sorry">Sorry 😔</button>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- LOVE SECTION -->
+  <section id="love" class="hidden">
+    <div class="content-box">
+      <h2>To My Dearest abcde,</h2>
+      <p>
+        From the moment I met you, you’ve filled my life with laughter, warmth,
+        and endless joy. Your smile is my daily sunrise, and your love is the
+        melody that keeps my heart dancing. On this special day, I want you to
+        know that you’re my everything—and I’m so grateful for every second we
+        share. Happy birthday, my love! May your day be as bright and beautiful
+        as you make my world.
+      </p>
+      <button class="btn-back">← Back</button>
+    </div>
+  </section>
+
+  <!-- SORRY SECTION -->
+  <section id="sorry" class="hidden">
+    <div class="content-box">
+      <h2>Oh no… I’m late!</h2>
+      <p>
+        I’m so sorry I didn’t wish you right at midnight. You mean the world to
+        me, and the only reason I missed it was because I was dreaming of all the
+        amazing moments we’ll create today. Please forgive me, and let’s make
+        this birthday unforgettable—starting now!
+      </p>
+      <div class="photos">
+        <img src="assets/images/couple1.jpg" alt="Us together 1">
+        <img src="assets/images/couple2.jpg" alt="Us together 2">
+      </div>
+      <button class="btn-back">← Back</button>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
